@@ -1,1 +1,164 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Businesses growing with AgentGrow</title>
+  <meta name="description" content="Meet the businesses publishing and growing with AgentGrow AI agents — content, leads, and growth on autopilot." />
+  <link rel="canonical" href="https://agentgrow-io.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Businesses growing with AgentGrow" />
+  <meta property="og:description" content="Meet the businesses publishing and growing with AgentGrow AI agents." />
+  <meta property="og:url" content="https://agentgrow-io.github.io/" />
+  <style>
+    :root {
+      --obsidian: #050505;
+      --white: #ffffff;
+      --zinc-300: #d4d4d8;
+      --zinc-400: #a1a1aa;
+      --zinc-500: #71717a;
+      --lime: #ADFA1D;
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --glass-border: rgba(255, 255, 255, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--obsidian);
+      color: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(60rem 40rem at 80% -10%, rgba(173, 250, 29, 0.10), transparent 60%),
+        radial-gradient(50rem 40rem at -10% 10%, rgba(56, 189, 248, 0.06), transparent 55%);
+      background-attachment: fixed;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header { padding: 88px 0 40px; text-align: center; }
+    .eyebrow {
+      display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--lime); font-weight: 700; margin-bottom: 18px;
+    }
+    h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; }
+    h1 .accent { color: var(--lime); }
+    .lede { max-width: 620px; margin: 18px auto 0; color: var(--zinc-400); font-size: clamp(16px, 2.2vw, 19px); }
+    .count { margin-top: 22px; font-size: 13px; color: var(--zinc-500); letter-spacing: 0.04em; }
+    .count b { color: var(--zinc-300); }
+
+    /* Grid */
+    main { padding: 24px 0 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 22px; }
+
+    .card {
+      display: flex; flex-direction: column; background: var(--glass-bg);
+      border: 1px solid var(--glass-border); border-radius: 18px; padding: 26px;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px); border-color: rgba(173, 250, 29, 0.4);
+      box-shadow: 0 18px 50px -20px rgba(173, 250, 29, 0.25);
+    }
+    .card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+    .avatar {
+      flex: 0 0 auto; width: 52px; height: 52px; border-radius: 14px;
+      display: grid; place-items: center; font-weight: 800; font-size: 22px; color: var(--obsidian);
+      background: linear-gradient(135deg, var(--lime), #7dd900);
+    }
+    .card-title { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+    .chip {
+      display: inline-block; margin-top: 5px; font-size: 11.5px; font-weight: 600;
+      color: var(--lime); background: rgba(173, 250, 29, 0.10);
+      border: 1px solid rgba(173, 250, 29, 0.22); padding: 3px 10px; border-radius: 999px;
+    }
+    .summary { color: var(--zinc-300); font-size: 15px; flex: 1 1 auto; }
+    .card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 22px; gap: 12px; }
+    .blog-cta { font-weight: 700; color: var(--lime); font-size: 15px; }
+    .blog-cta:hover { text-decoration: underline; }
+    .site-link { color: var(--zinc-500); font-size: 13px; }
+    .site-link:hover { color: var(--zinc-300); }
+
+    .empty { text-align: center; color: var(--zinc-500); padding: 60px 0; font-size: 16px; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--glass-border); margin-top: 48px; padding: 36px 0 56px; text-align: center; color: var(--zinc-500); font-size: 14px; }
+    .footer-cta {
+      display: inline-block; margin-bottom: 20px; font-weight: 700; color: var(--obsidian);
+      background: var(--lime); padding: 12px 22px; border-radius: 999px; font-size: 15px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .footer-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -12px rgba(173, 250, 29, 0.5); }
+    footer a.text-link { color: var(--zinc-300); }
+    footer a.text-link:hover { color: var(--lime); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="eyebrow">Powered by AgentGrow</span>
+      <h1>Businesses growing with <span class="accent">AgentGrow</span></h1>
+      <p class="lede">Content, leads, and growth — on autopilot. Meet the businesses publishing with their own AgentGrow AI agent.</p>
+      <p class="count" id="count"></p>
+    </header>
+
+    <main>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>More businesses coming soon.</div>
+      <noscript><div class="empty">Enable JavaScript to view the directory.</div></noscript>
+    </main>
+
+    <footer>
+      <a class="footer-cta" href="https://agentgrow.io/onboard/?trial=true&amp;ref=showcase">Grow your business with AgentGrow →</a>
+      <div>&copy; <span id="year"></span> AgentGrow · <a class="text-link" href="https://agentgrow.io">agentgrow.io</a></div>
+    </footer>
+  </div>
+
+  <script>
+    const BASE = "https://agentgrow-io.github.io/";
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const initial = (name) => (name || "?").trim().charAt(0).toUpperCase();
+
+    function cardHTML(u) {
+      const blogUrl = u.blog_url || (BASE + encodeURIComponent(u.slug) + "/");
+      const site = u.website
+        ? `<a class="site-link" href="${esc(u.website)}" target="_blank" rel="noopener">${esc(u.website.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`
+        : `<span></span>`;
+      const chip = u.sector ? `<span class="chip">${esc(u.sector)}</span>` : "";
+      return `
+        <article class="card">
+          <div class="card-head">
+            <div class="avatar" aria-hidden="true">${esc(initial(u.name))}</div>
+            <div>
+              <div class="card-title">${esc(u.name)}</div>
+              ${chip}
+            </div>
+          </div>
+          <p class="summary">${esc(u.summary)}</p>
+          <div class="card-foot">
+            <a class="blog-cta" href="${esc(blogUrl)}">Read the blog →</a>
+            ${site}
+          </div>
+        </article>`;
+    }
+
+    document.getElementById("year").textContent = "2026";
+
+    fetch("users.json", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : []))
+      .then((users) => {
+        const list = Array.isArray(users) ? users.filter((u) => u && u.slug && u.name) : [];
+        const grid = document.getElementById("grid");
+        if (!list.length) {
+          document.getElementById("empty").hidden = false;
+          return;
+        }
+        grid.innerHTML = list.map(cardHTML).join("");
+        const n = list.length;
+        document.getElementById("count").innerHTML = `<b>${n}</b> ${n === 1 ? "business" : "businesses"} and counting`;
+      })
+      .catch(() => { document.getElementById("empty").hidden = false; });
+  </script>
+</body>
+</html>
